@@ -58,7 +58,10 @@ def grid_scan_loop():
 	for v in (parameters_ML, parameters_CNN, parameters_trasfer):
 		scan_params += list(ParameterGrid(v))
 
-	for j, p in enumerate(scan_params[119:]):
+	with open("./results/results.csv") as f:
+		last_t = sum(1 for line in f) - 1
+
+	for j, p in enumerate(scan_params[last_t:]):
 		print(f"Starting experiment {j+1}")
 		print(f"Configuration\n{p}")
 		device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -188,8 +191,8 @@ def model_inference(category, data):
             X = model.weights.transforms(antialias=True)(X)
         y_pred = model(X)
         y_pred = y_pred.argmax(dim=1)
-        predictions.append((y_pred, bool(y_pred == y)))
+        predictions.append(y_pred)
 
-    return [("Cihuahua", x[1]) if x[0] == 0 else ("Muffin", x[1]) for x in predictions]
+    return ["Cihuahua" if x == 0 else "Muffin" for x in predictions]
 
         

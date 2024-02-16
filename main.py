@@ -24,11 +24,11 @@ if __name__ == "__main__":
     # To retrain the best model for each category on all 
     # the training dataset  
 
-    train_save_best_models()
+    ## train_save_best_models()
 
     # To do inference on some data with best models
 
-    res = model_inference("CNN", test_data)
+    res = model_inference("MP", test_data)
     print(res)
 
     # visualizations
