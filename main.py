@@ -11,30 +11,30 @@ torch.manual_seed(42)
 
 if __name__ == "__main__":
 
-	# To execute the gridscan performed in the analysis
+    # To execute the grid scan performed in the analysis
 
-	## grid_scan_loop()
+    ## grid_scan_loop()
 
-	# To calculate the test accuracy of the ResNet model 
-	# with no tuning (91.5%) 
+    # To calculate the test accuracy of the ResNet model 
+    # with no tuning (91.5% accuracy) 
 
-	## acc = inference_resnet_no_tuning()
-	## print(acc)
+    ## acc = inference_resnet_no_tuning()
+    ## print(acc)
 
-	# To retrain the best model for each category on the 
-	# all training dataset  
+    # To retrain the best model for each category on all 
+    # the training dataset  
 
-	## train_save_best_models()
+    ## train_save_best_models()
 
-	# To do inference on some data with best models
+    # To do inference on some data with best models
 
-	res = model_inference("CNN", test_data)
-	print(res)
+    res = model_inference("CNN", test_data)
+    print(res)
 
-	# visualizations
+    # visualizations
 
-	plot_accuracy_plots("ResNet")
-	uncertainty_hist_and_worst_img()
+    plot_accuracy_plots("ResNet")
+    uncertainty_hist_and_worst_img()
 
 
 
