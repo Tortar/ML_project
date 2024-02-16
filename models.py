@@ -59,7 +59,7 @@ class FNN_3(nn.Module):
 """
 ML with one hidden layer and ReLU activation function
 """
-class ML_1(nn.Module):
+class MP_1(nn.Module):
     def __init__(self, input_shape: int, hidden_units: int, output_shape: int):
         super().__init__()
         self.layer_stack = nn.Sequential(
@@ -77,7 +77,7 @@ class ML_1(nn.Module):
 """
 ML with one hidden layer, ReLU activation function, dropout layers
 """
-class ML_2(nn.Module):
+class MP_2(nn.Module):
     def __init__(self, input_shape: int, hidden_units: int, output_shape: int):
         super().__init__()
         self.layer_stack = nn.Sequential(
@@ -97,7 +97,7 @@ class ML_2(nn.Module):
 """
 ML with two hidden layer, ReLU activation function, dropout layers
 """
-class ML_3(nn.Module):
+class MP_3(nn.Module):
     def __init__(self, input_shape: int, hidden_units: int, output_shape: int):
         super().__init__()
         self.layer_stack = nn.Sequential(

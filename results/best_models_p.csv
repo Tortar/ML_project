@@ -1,4 +1,4 @@
 Category,Parameters,Max_Accuracy,Optimal_Epochs
-ML,"{'hidden_units': 256, 'input_shape': 49152, 'learning_rate': 0.0001, 'loss': torch.nn.CrossEntropyLoss(), 'max_epochs': 50, 'model': ML_2, 'optimizer': torch.optim.Adam, 'output_shape': 2}",77.4138874067658,18
+MP,"{'hidden_units': 256, 'input_shape': 49152, 'learning_rate': 0.0001, 'loss': torch.nn.CrossEntropyLoss(), 'max_epochs': 50, 'model': MP_2, 'optimizer': torch.optim.Adam, 'output_shape': 2}",77.4138874067658,18
 CNN,"{'hidden_units': 128, 'input_shape': 3, 'learning_rate': 0.01, 'loss': torch.nn.CrossEntropyLoss(), 'max_epochs': 50, 'model': CNN_3, 'optimizer': torch.optim.SGD, 'output_shape': 2}",94.0630364944601,30
 ResNet,"{'learning_rate': 0.0001, 'loss': torch.nn.CrossEntropyLoss(), 'max_epochs': 50, 'model': ResNet50_transfer, 'optimizer': torch.optim.Adam}",99.662068488227,9

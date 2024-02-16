@@ -5,7 +5,7 @@ from time import time
 from tqdm.auto import tqdm
 from sklearn.model_selection import ParameterGrid
 from data_loading import final_train_dataloader, final_test_dataloader, muffins_filenames, KFoldDataLoader, test_data
-from models import ML_1, ML_2, ML_3
+from models import MP_1, MP_2, MP_3
 from models import CNN_1, CNN_2, CNN_3
 from models import ResNet50_transfer, ResNet34_transfer, ResNet18_transfer, ResNet50
 from steps import train_step, test_step, EarlyStopper
@@ -18,7 +18,7 @@ torch.manual_seed(42)
 
 def grid_scan_loop():
 
-	models_ML = [ML_1, ML_2, ML_3]
+	models_ML = [MP_1, MP_2, MP_3]
 	models_CNN = [CNN_2, CNN_3]
 	models_transfer = [ResNet18_transfer, ResNet34_transfer, ResNet50_transfer]
 

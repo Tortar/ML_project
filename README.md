@@ -10,7 +10,7 @@ always the same, it contains the following code:
 ```python
 if __name__ == "__main__":
 
-    # To execute the gridscan performed in the analysis
+    # To execute the grid scan performed in the analysis
 
     grid_scan_loop()
 
@@ -30,13 +30,13 @@ if __name__ == "__main__":
     res = model_inference("CNN", test_data)
     print(res)
 
-    # visualizations
+    # visualizations of the 
 
     plot_accuracy_plots("ResNet")
     uncertainty_hist_and_worst_img()
 ```
 
-Some parts are actually commented in the actual file because they require a lot of
+Some parts are commented in the actual file because they require a lot of
 time to execute, in particular the `grid_scan_loop()` function requires days to finish
 (but if restarted it will resume from the point it stopped).
 

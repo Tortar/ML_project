@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from data_loading import final_train_dataloader, final_test_dataloader, muffins_filenames, test_data
-from models import ML_1, ML_2, ML_3
+from models import MP_1, MP_2, MP_3
 from models import CNN_1, CNN_2, CNN_3
 from models import ResNet50_transfer, ResNet34_transfer, ResNet18_transfer, ResNet50
 from steps import train_step, test_step
@@ -56,16 +56,16 @@ def calculate_average_metrics_across_folds(series_folds_loss, series_folds_acc, 
             metrics[j][i] /= len(series_folds_loss)
     return metrics
 
-def plot_accuracy_plots(highlighted = "ML"):
+def plot_accuracy_plots(highlighted = "MP"):
 
     df = retrieve_results()
 
     sns.set_theme()
     t = range(0, 51)
 
-    non_hightleted = [m for m in ("ML", "CNN", "ResNet") if m != highlighted]
+    non_hightleted = [m for m in ("MP", "CNN", "ResNet") if m != highlighted]
 
-    fnns = ["ML_1", "ML_2", "ML_3"]
+    fnns = ["MP_1", "MP_2", "MP_3"]
     cnns = ["CNN_3", "CNN_2"]
     resnets = ["ResNet50_transfer", "ResNet34_transfer", "ResNet18_transfer"]
     models = fnns if highlighted in fnns[1] else (cnns if highlighted in cnns[1] else resnets)
