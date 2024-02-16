@@ -40,5 +40,4 @@ Some parts are commented in the actual file because they require a lot of
 time to execute, in particular the `grid_scan_loop()` function requires days to finish
 (but if restarted it will resume from the point it stopped).
 
-
-
+The best models for each tested architecture are saved in the `best_models` folder
