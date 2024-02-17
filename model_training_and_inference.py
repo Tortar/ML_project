@@ -191,7 +191,7 @@ def model_inference(category, data):
 
     predictions = []
 
-    for _, (X, y) in enumerate(final_test_dataloader):
+    for _, (X, y) in enumerate(data):
         if hasattr(model, 'weights') and model.weights != None: 
             X = model.weights.transforms(antialias=True)(X)
         y_pred = model(X)

@@ -1,7 +1,7 @@
 
 import random, torch
 
-from data_loading import test_data
+from data_loading import final_test_dataloader
 from model_training_and_inference import grid_scan_loop, inference_resnet_no_tuning
 from model_training_and_inference import train_save_best_models, model_inference
 from data_visualization import plot_accuracy_plots, uncertainty_hist_and_worst_img
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     # To do inference on some data with best models
 
-    res = model_inference("MP", test_data)
+    res = model_inference("MP", final_test_dataloader)
     print(res)
 
     # visualizations
