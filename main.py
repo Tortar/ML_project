@@ -33,7 +33,10 @@ if __name__ == "__main__":
 
     # visualizations
 
+    plot_accuracy_plots("MP")
+    plot_accuracy_plots("CNN")
     plot_accuracy_plots("ResNet")
+
     uncertainty_hist_and_worst_img()
 
 

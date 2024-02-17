@@ -1,17 +1,4 @@
 Category,Parameters,Max_Accuracy,Optimal_Epochs
-MP,"{'hidden_units': 256, 'input_shape': 49152, 'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.MP_2'>, 'optimizer': <class 'torch.optim.adam.Adam'>, 'output_shape': 2}",77.4138874067658,18
-CNN,"{'hidden_units': 128, 'input_shape': 3, 'learning_rate': 0.01, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.CNN_3'>, 'optimizer': <class 'torch.optim.sgd.SGD'>, 'output_shape': 2}",94.0630364944601,30
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.662068488227,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
-ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9
+MP,"{'hidden_units': 256, 'input_shape': 49152, 'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.MP_2'>, 'optimizer': <class 'torch.optim.adam.Adam'>, 'output_shape': 2}",77.41388740676578,18
+CNN,"{'hidden_units': 128, 'input_shape': 3, 'learning_rate': 0.01, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.CNN_3'>, 'optimizer': <class 'torch.optim.sgd.SGD'>, 'output_shape': 2}",94.06303649446008,30
 ResNet,"{'learning_rate': 0.0001, 'loss': CrossEntropyLoss(), 'max_epochs': 50, 'model': <class 'models.ResNet50_transfer'>, 'optimizer': <class 'torch.optim.adam.Adam'>}",99.66206848822699,9

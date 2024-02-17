@@ -98,7 +98,7 @@ def plot_accuracy_plots(highlighted = "MP"):
 
     plt.margins(x=0.01, y=0.02)
 
-    if highlighted == "ML":
+    if highlighted == "MP":
         m = "5-fold Cross-Validated Accuracy of Multilayered Perceptrons models"
     if highlighted == "CNN":
         m = "5-fold Cross-Validated Accuracy of Convolutional Neural Networks models"
@@ -125,8 +125,15 @@ def retrieve_results():
         df.at[i, "list_validation_accs"] = metrics[1]
     return df
 
+already_saved = False
+
 def save_best_model_results(category, params, max_acc, epochs):
-    mode = "a" if os.path.isfile("./results/best_models.csv") else "w"
+    global already_saved
+    if already_saved == False:
+        mode = "w"
+        already_saved = True
+    else:
+        mode = "a"
     with open(f'./results/best_models.csv', mode) as f: 
         w = csv.writer(f, ["Category", "Parameters", "Max_Accuracy", "Optimal_Epochs"])
         if mode == "w": w.writerow(("Category", "Parameters", "Max_Accuracy", "Optimal_Epochs")) 
