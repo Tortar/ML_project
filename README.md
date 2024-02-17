@@ -31,7 +31,7 @@ if __name__ == "__main__":
     res = model_inference("CNN", test_data)
     print(res)
 
-    # visualizations of the 
+    # function producing the graphs of the report 
 
     plot_accuracy_plots("ResNet")
     uncertainty_hist_and_worst_img()
