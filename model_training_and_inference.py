@@ -60,8 +60,13 @@ def grid_scan_loop():
 
 	with open("./results/results.csv") as f:
 		last_t = sum(1 for line in f) - 1
-
-	for j, p in enumerate(scan_params[last_t:]):
+	
+	
+	remaining_params = scan_params[last_t:]
+	if remaining_params == []:
+		print(f"The grid scan was already performed for all models because the result.csv file contains {last_t} rows")
+		
+	for j, p in enumerate(remaining_params):
 		print(f"Starting experiment {j+1}")
 		print(f"Configuration\n{p}")
 		device = 'cuda' if torch.cuda.is_available() else 'cpu'
