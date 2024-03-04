@@ -51,3 +51,10 @@ and at the same time it would have made the training slower. Nonetheless, the be
 for each tested architecture are saved inside the [`best_models`](https://github.com/Tortar/ML_project/tree/main/best_models) 
 folder, and the results of the grid scan loop in the [`results`](https://github.com/Tortar/ML_project/tree/main/results)
 folder.
+
+## Results
+
+- Best Multilayered Perceptron test accuracy: 77.83%;
+- Best Convolutional Neural Network test accuracy: 94.53%;
+- Best Residual Neural Network test accuracy: 100%.
+  
