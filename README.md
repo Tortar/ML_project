@@ -54,7 +54,7 @@ folder.
 
 ## Results
 
-- Best Multilayered Perceptron test accuracy: 77.83%;
-- Best Convolutional Neural Network test accuracy: 94.53%;
-- Best Residual Neural Network test accuracy: 100%.
+- Best Multilayered Perceptron test accuracy: 77.83%
+- Best Convolutional Neural Network test accuracy: 94.53%
+- Best Residual Neural Network test accuracy: 100%
   
