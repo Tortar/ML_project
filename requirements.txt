@@ -1,7 +1,7 @@
 numpy
 pandas
 pillow
-sklearn
+scikit-learn
 tqdm
 torch
 torchmetrics
